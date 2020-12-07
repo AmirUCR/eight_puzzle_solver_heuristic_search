@@ -77,3 +77,72 @@ Based on my empirical results concerning the three search algorithms of uniform 
 <li>Using the A* search significantly improved the time and complexity compared to the uniform cost. Between the two heuristics that we used to A*, euclidean distance outperformed missing tiles in both time and space when the puzzle was more difficult. The missing tiles heuristic slightly outperforms euclidean distance in terms of time when our puzzle is simple while it occupies the same space.
 </li>
 </ol>
+
+# Program Output
+Welcome to Amir's 8-puzzle solver.
+Select an option:
+
+[1] Default 3x3 puzzle
+ 2  Custom puzzle
+(Press enter to default to [1])
+ 
+Default puzzle: enter the difficulty (1 to 7):
+
+[1] demo
+ 2  trivial
+ 3  very easy
+ 4  easy
+ 5  doable
+ 6  oh boy
+ 7  impossible
+ 5
+Selected doable
+
+Display state traceback at the end? (may crash your notebook if puzzle is too difficult) [y]/n
+ 
+Select algorithm:
+ 1  Uniform Cost Search
+ 2  A* Misplaced Tile Heuristic
+ 3  A* Manhattan Distance Heuristic
+[4] A* Euclidean Distance Heuristic (fastest)
+
+ 
+Selected A* Euclidean Distance Heuristic
+
+The best state to expand with g(n) = 0 and h(n) = 0 is...<br />
+[0, 1, 2]<br />
+[4, 5, 3]<br />
+[7, 8, 6]<br />
+
+The best state to expand with g(n) = 1 and h(n) = 3 is...<br />
+[1, 0, 2]<br />
+[4, 5, 3]<br />
+[7, 8, 6]<br />
+
+The best state to expand with g(n) = 2 and h(n) = 2 is...<br />
+[1, 2, 0]<br />
+[4, 5, 3]<br />
+[7, 8, 6]<br />
+
+The best state to expand with g(n) = 3 and h(n) = 1 is...<br />
+[1, 2, 3]<br />
+[4, 5, 0]<br />
+[7, 8, 6]<br />
+
+The best state to expand with g(n) = 4 and h(n) = 0 is...<br />
+[1, 2, 3]<br />
+[4, 5, 6]<br />
+[7, 8, 0]<br />
+
+Found a solution!<br />
+Traceback:<br />
+[[1, 2, 3], [4, 5, 6], [7, 8, 0]]<br />
+[[1, 2, 3], [4, 5, 0], [7, 8, 6]]<br />
+[[1, 2, 0], [4, 5, 3], [7, 8, 6]]<br />
+[[1, 0, 2], [4, 5, 3], [7, 8, 6]]<br />
+[[0, 1, 2], [4, 5, 3], [7, 8, 6]]<br />
+5 nodes traced.
+
+To solve this problem the search algorithm expanded a total of 4 nodes.<br />
+The maximum number of nodes in the queue at any one time: 4<br />
+--- 0.0067656999999599066 milliseconds ---
