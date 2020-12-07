@@ -21,8 +21,8 @@ After you select your desired difficulty, the program asks you to select an algo
 <ul>
 <li>Simple Uniform Cost Search</li>
 <li>A* Misplaced Tile Heuristic</li>
-<li>Third item</li>
 <li>A* Manhattan Distance Heuristic</li>
+<li>A* Euclidean Distance Heuristic</li>
 </ul>
 
 After you select an algorithm, the program begins to search for a solution. It subsequently displays a traceback of the solution nodes, the number of expansions, max nodes in the queue at any time, and the execution time.
@@ -60,11 +60,9 @@ We see that again, A* search outperforms the other two by a huge margin. Uniform
 
 Here’s another chart that shows the number of maximum nodes in our queue at any given time:
 
-
 ![Max nodes vs. difficulty](/images/max_nodes_vs_diff.png "Max nodes vs. difficulty")
 
 Again, the uniform cost search requires much more space when it comes to increasingly difficult puzzles. Here’s the Oh Boy difficulty chart for max nodes in queue:
-
 
 ![Oh Boy max nodes vs. difficulty](/images/oh_boy_max_nodes_vs_diff.png "Oh Boy max nodes vs. difficulty")
 
