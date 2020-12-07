@@ -1,6 +1,8 @@
 # Background
 "Heuristic search refers to a search strategy that attempts to optimize a problem by iteratively improving the solution based on a given heuristic function or a cost measure." [Source](https://link.springer.com/referenceworkentry/10.1007%2F978-1-4419-9863-7_875) This repo contains the Python code that attempts to solve the 8-Puzzle by using various heuristic search methods.
 
+Some additional features include input verification, and default menu options for a quick program test.
+
 # Introduction
 Here we explore the methods I used to implement the Uniform Cost search, and the A* search with misplaced tile and Euclidean heuristics using Tree search. Furthermore, I
 illustrate the space and time complexity of these algorithms via visualizations. This program is written in Python 3.
