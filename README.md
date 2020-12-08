@@ -78,33 +78,33 @@ Based on my empirical results concerning the three search algorithms of uniform 
 </li>
 </ol>
 
-# Program Output
-Welcome to Amir's 8-puzzle solver.
-Select an option:
+# Program Output<br />
+Welcome to Amir's 8-puzzle solver.<br />
+Select an option:<br />
 
-[1] Default 3x3 puzzle
- 2  Custom puzzle
-(Press enter to default to [1])
+[1] Default 3x3 puzzle<br />
+ 2  Custom puzzle<br />
+(Press enter to default to [1])<br />
  
 Default puzzle: enter the difficulty (1 to 7):
 
-[1] demo
- 2  trivial
- 3  very easy
- 4  easy
- 5  doable
- 6  oh boy
- 7  impossible
- 5
-Selected doable
+[1] demo<br />
+ 2  trivial<br />
+ 3  very easy<br />
+ 4  easy<br />
+ 5  doable<br />
+ 6  oh boy<br />
+ 7  impossible<br />
+ 5<br />
+Selected doable<br />
 
 Display state traceback at the end? (may crash your notebook if puzzle is too difficult) [y]/n
  
-Select algorithm:
- 1  Uniform Cost Search
- 2  A* Misplaced Tile Heuristic
- 3  A* Manhattan Distance Heuristic
-[4] A* Euclidean Distance Heuristic (fastest)
+Select algorithm:<br />
+ 1  Uniform Cost Search<br />
+ 2  A* Misplaced Tile Heuristic<br />
+ 3  A* Manhattan Distance Heuristic<br />
+[4] A* Euclidean Distance Heuristic (fastest)<br />
 
  
 Selected A* Euclidean Distance Heuristic
